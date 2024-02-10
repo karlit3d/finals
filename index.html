@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUP Health Declaration Form A</title>
+    <!--LINK TO CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- BOX ICONS-->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!--NAVBAR-->
+        
+    
+
+        <header>
+            <div class="logo">
+            <img src="PUP.png" alt="" ><br><br>
+            <span>
+                <h4 style="line-height: 16px;">REPUBLIC OF THE PHILIPPINES <br> <span style="font-size: 18px; font-weight: 700; color: #ab1118;">
+                POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</span> </h4>
+                <p style="margin-top: 4px;"> OFFICE OF THE VICE PRESIDENT FOR ADMINISTRATION</p>
+                <h3 style="margin-bottom: 3px;"> MEDICAL SERVICES DEPARTMENT</h3>
+            </span>
+             </div>
+             <a href="#" class="logo"></a>
+             <nav>
+                
+                <a href="#home" class="active" >Home</a>
+                <a href="#info" >Personal Info</a>
+                <a href="#checklist" >Checklist</a>
+                <a href="#Contact">Contacts</a>
+            
+        </nav>
+        
+        </header>
+        <form method="post" action="https://script.google.com/macros/s/AKfycbzzjV6KuwOKNNHlhR4IwWXTtPSdcfUVGZ-kJWaZGtcQfduY_AkHQzlvQNh14edxQINb-Q/exec">
+            <!--HOME SECTION-->
+
+         <section class="home" id="home">
+            <div class="home-container">
+                <div class="container">
+                    <h1> Data Collection Consent </h1><br>
+                   <p>I hereby authorize Polytechnic University of the Philippines to collect and process the data indicated herein for the
+                    purpose of mitigating COVID-19 (Corona Virus 2019). I understand that my personal information is protected by RA
+                    10173, Data Privacy Act of 2012, and that I am required by RA 11469 , Bayanihan to Heal as One Act, to provide
+                    truthful information.</p>
+
+                    <br><br>
+                    <input type="checkbox" name="Data Collection Consent" id="agree" value="Agree" required>
+                    <label for="agree" style="font-weight: 700; color: #a23338;">I have read and agreed to the terms & condition</label>
+                </div>
+            </div>
+
+            
+        
+            </section>
+            
+
+                <!--INFO SECTION-->
+
+            <section id="info">    
+                <div class="Title">Virtual Triage Checklist for COVID-19</div><br><br>
+                <div class="info-container">
+                <div class="Titles">Personal Information</div><br><br>
+                        <div class="user-details">
+                            
+                            <div class="input-box">
+                                <label for="details">Full Name</label>
+                                <input type="text"  name="Full Name" id="name" placeholder="Enter Your Name" required title="Please Enter Your Name">
+                                <p>Last Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Middle Name</p>
+                            </div>
+                            <div class="input-box">
+                                <label for="details">Student No.</label>
+                                <input type="text"  name="Student No." id="student" placeholder="Enter Your Student Number" pattern="\d{4}-\d{5}-[A-Z]{2}-\d" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="details">Age</label>
+                                <input type="number"  name="Age" id="age" placeholder="Enter Your Age" required min="0" max="100">
+                            </div>
+                            <div class="input-box">
+                                <label for="details">Email Address</label>
+                                <input type="email"  name="Email Address" id="email" placeholder="Enter Your Email Address" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="details">Home Adress</label>
+                                <input type="text"  name="Home Adress" id="homeadd" placeholder="Enter Your Address" required>
+                                <p>House/ Bldg No.&nbsp;&nbsp;&nbsp;&nbsp;Street Name,&nbsp;&nbsp;&nbsp;&nbsp;Baranggay,&nbsp;&nbsp;&nbsp;&nbsp;Municipality,&nbsp;&nbsp;&nbsp;&nbsp;Province,&nbsp;&nbsp;&nbsp;&nbsp;Region.</p>
+                            </div>
+                            <div class="input-box">
+                                <label for="details">Contact Details</label>
+                                <input type="tel"  name="Contact" id="contact" placeholder="Phone No." required>
+                                <input type="tel"  name="Contact" id="contactphone" placeholder="Telephone No. (Optional)"  >
+                            </div>
+
+                    <!--INFO GENDER-->
+
+                        </div>
+                        <br>
+                        <div class="gender-details">
+                            <span style="font-weight: 600;">Gender</span>
+                            <br>
+                            <div class="gender-pick">
+                                        <div class="input-group">
+                                            <input type="radio" name="Gender" id="male" value="Male">
+                                            <label for="male">Male</label>
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="radio" name="Gender" id="female" value="Female" required>
+                                            <label for="female">Female</label>
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="radio" name="Gender" id="nonbinary" value="Non-Binary" required>
+                                            <label for="nonbinary">Non-Binary</label>
+                                        </div>
+                                        <div class="input-group">
+                                        <input type="radio" name="Gender" id="no" value="Prefer Not To Say" required>
+                                        <label for="no">Prefer Not To Say</label>
+                                         </div>   
+                            </div>
+                            <div class="pregnant" style="margin-right: 10%;">
+                                <label for="first" style="font-weight: 600;" >If Female, Are You Possibly Pregnant/ Are You Pregnant?</label>
+                               <br> <br>
+                                <input type="checkbox" name="Pregnant" value="Yes">
+                                <span>Yes</span>
+                                <input type="checkbox" name="Pregnant" value="No">
+                                <span>No</span>
+                            </div>
+                        </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    </section>
+                        <!--CHECKLIST-->
+
+                            <section  id="checklist">
+                                <div class="containerfr">
+                                <div class="container">
+                                    <div class="user-details">
+                                        <div class="date-time">
+                                        <div class="input">
+                                            <label for="temp">Temperature</label>
+                                            <input type="text" name="Temperature" id="temp" placeholder="Example: 36.5C" required>
+                                        </div>
+                                        <div class="input">
+                                            <label for="date">Date</label>
+                                            <input type="date" name="Date" id="date" required>
+                                        </div>
+                                        <div class="input">
+                                            <label for="time">Time</label>
+                                            <input type="time" name="Time" id="time"  required>
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <h1>A. Clinical Signs and Symptoms<br>Please check the box if you have any of the following:</h1> <br>
+                                    <div class="checklistt">
+                                        
+                                        <div class="inputs">
+                                            <label for="fever"> Fever <span style="font-style: italic; font-size: 14px; color: rgba(16, 16, 16, 0.601);">(Lagnat) </span></label>
+                                            <input type="checkbox" name="Fever" id="fever" value="I have a fever " >
+                                        </div>
+                                        <div class="inputs">
+                                            <label for="cough">Cough <span style="font-style: italic; font-size: 14px; color: rgba(16, 16, 16, 0.601);">(Ubo)</span> </label>
+                                            <input type="checkbox" name="Cough" id="cough"  value="I have a cough">
+                                        </div>
+                                        <div class="inputs">
+                                            <label for="diarrhea">Diarrhea <span style="font-style: italic; font-size: 14px; color: rgba(16, 16, 16, 0.601);">(Pagtatae)</span> </label>
+                                            <input type="checkbox" name="Diarrhea" id="diarrhea"  value="I have a diarrhea">
+                                        </div>
+                                        <div class="inputs">
+                                            <label for="breath">Shortness of Breath <span style="font-style: italic; font-size: 14px; color: rgba(16, 16, 16, 0.601);">(Hingal)</span>  </label>
+                                            <input type="checkbox" name="Shortness of Breath" id="breath" value="I have shortness of breath" >
+                                        </div>
+                                        <div class="inputs">
+                                            <label for="throat"> Sore throat <span style="font-style: italic; font-size: 14px; color: rgba(16, 16, 16, 0.601);">(Pananakit ng lalamunan)</span> </label>
+                                            <input type="checkbox" name="Sore Throat" id="throat"value="I have sore throat" >
+                                        </div>
+                                        <div class="inputs">
+                                            <label for="sipon"> Runny Nose <span style="font-style: italic; font-size: 14px; color: rgba(16, 16, 16, 0.601);">(Sipon)</span> </label>
+                                            <input type="checkbox" name="Runny Nose" id="sipon" value="I have a runny nose" >
+                                        </div>
+                                        <div class="inputs">
+                                            <label for="paghinga">Difficulty of Breathing <span style="font-style: italic; font-size: 14px; color: rgba(16, 16, 16, 0.601);">(Hirap sa Paghinga)</span> </label>
+                                            <input type="checkbox" name="Difficulty in Breathing" id="paghinga" value="I have difficulty in breathing" >
+                                        </div>
+                                    </div>
+                                    <br><br>
+
+                                <!--CHECKLIST B-->
+    
+                                    <div class="B">B. Risk of Exposure to Covid-19 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yes&nbsp;&nbsp; No</div>
+                                        <div class="checklist2">
+                                            <h1 style="line-height: 2;">1.&nbsp;&nbsp; Have you traveled to any places or country with confirmed
+                                                cases of COVID-19 for the last 14 days?<br>
+                                                <span style="font-style: italic; font-size: 14px; color: rgba(16, 16, 16, 0.601);"> Ikaw ba ay pumunta o nagbyahe sa mga lugar kung
+                                                saan may kumpirmadong kaso ng COVID-19 nitong nakaraang
+                                                dalawang linggo o 14 na araw?</span></h1>
+
+                                        <div class="inputs">
+                                            <label for="first"></label>
+                                            <input type="checkbox" name="Traveled to places with confirmed cases" value="Yes"  >
+                                            <input type="checkbox" name="Traveled to places with confirmed cases" value="No"  >
+                                        </div>
+
+                                        <h1 style="line-height: 2;">2.&nbsp;&nbsp; Have you come into close contact with someone who is
+                                            a <span class=highlight style="font-weight: 700;">CONFIRMED or PROBABLE </span> case of COVID-19 for the past
+                                            14 days?<br> <span style="font-style: italic; font-size: 14px; color: rgba(16, 16, 16, 0.601);">Ikaw ba ay ay may nakasama na may ubo, lagnat, sipon o sakit ng lalamunan
+                                                o kumpirmadong may sakit na COVID-19 sa nakalipas na dalawang linggo?</span></h1
+                                                >
+                                                <div class="inputs">
+                                            <label for="first"></label>
+                                            <input type="checkbox" name="Close contact with someone who is confirmed or probable case of COVID-19" value="Yes"  >
+                                            <input type="checkbox" name="Close contact with someone who is confirmed or probable case of COVID-19" value="No"  >
+                                                </div>  
+                                            <h1 style="line-height: 2;" >3.&nbsp;&nbsp; Do you have any pre-existing illness?<br><span style="font-style: italic; font-size: 14px; color: rgba(16, 16, 16, 0.601);">Ikaw ba ay may iba pang kasalukuyan na karamdaman tulad ng altapresyon,
+                                                dyabetis, sakit sa puso at iba pa?</span> </h1>
+                                                
+                                                <div class="inputs">
+                                                    <label for="first"></label>
+                                                    <input type="checkbox" name="Have pre-existing illness" value="Yes"  >
+                                                    <input type="checkbox" name="Have pre-existing illness" value="No"  >
+                                                </div>   
+                                               
+                                                <div class="input">
+                                                    <label for ="illness" style="padding-left: 20px;">If yes please specify</label>
+                                                    <input type="text" name="Illness" id="illness" placeholder="Enter Your Illness" >
+                                                </div>
+                                                <br><br>
+
+                                                    <!--ASSESSMENT-->
+
+                                                <div class="assessed">
+                                                    <h1 style=" font-weight: 700;">ASSESSED BY:</h1>
+                                               
+                                                    <div class="assessed">
+                                                        <div class="input">
+                                                            <input type="text" name="Nurse" id="nurse" required>
+                                                            <label for="nurse">Nurse</label>
+                                                        </div>
+                                                        <div class="input">
+                                                            <input type="text" name="Doctor" id="doctor" required>
+                                                            <label for="doctor">Doctor</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="sub">
+                                                <input type="submit" value="Submit" >
+                                                 </div>  
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+
+
+                                </section>
+                                
+
+       </form>
+
+    <!--CONTACT SECTION-->
+
+        <section id="Contact">
+            <div class="containerer">
+                <div class="contact-info">
+                    <br>
+                <p class="Contacts" style="color: #ab1118; font-size: 18px; font-weight: 600;">CONTACT US</p>
+                <p>PUP A. Mabini Campus
+                Anonas Street, Sta. Mesa, Manila 1016</p>
+                <p>Phone: <span style="font-weight: 650;">(+63 2) 5335-1PUP (5335-1787) or 5335-1777</span></p>
+                <p >Website: <a href="http://www.pup.edu.ph">www.pup.edu.ph</a> | Email: <a href="mailto:medical@pup.edu.ph">medical@pup.edu.ph</a></p>
+                <h1 style="font-weight: 400;">The Country’s 1<sup style="font-family: 'Times New Roman', Times, serif;">st</sup> PolytechnicU</h1>
+                </div>
+                    <div class="linked">
+                <div class="link">
+                    <p style="color: #ab1118; font-size: 18px; font-weight: 600;">KEEP IN TOUCH</p>
+                    <a href="https://www.facebook.com/ThePUPOfficial" target="_blank" class="facebook-logo"></a>
+                    <a href="https://twitter.com/ThePUPOfficial" class="x-logo"></a>
+                    <a href="https://www.youtube.com/user/pupcreatv" target="_blank" class="youtube-logo"></a>
+                </div>
+               
+               
+                <div class="web">
+                    <p style="color: #ab1118; font-size: 18px; font-weight: 600;">PUP WEBSITE 10</p>
+                    <a href="https://www.pup.edu.ph/terms/">Terms of Use</a> <span>l</span>
+                    <a href="https://www.pup.edu.ph/privacy/">About PUP Privacy</a>
+                </div>
+        
+                 </div>
+                <div class="copyright-text">
+                    <p>© 1998-2021 POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</p>
+                </div>
+            </div>
+       
+        </section>
+        
+        <script src="script.js"></script>
+</body>
+</html>
